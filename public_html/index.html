@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Introduccion Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet">
+        <script src="js/jquery-3.1.1.js"> </script>
+        <script src="js/codigo1.js"> </script>
+    </head>
+    <body>
+        <h1> Programa calculadora</h1>
+        <form id="frm1">
+            <label>Operando 1</label>
+            <input type="number" min="-1000" max="1000" value="0" required name="txt1" id="txt1"><br>
+            <label>Operando 2</label>
+            <input type="number" min="-1000" max="1000" value="0" required name="txt2" id="txt2"><br>            
+            <label>Operador</label>
+            <select name="lst1" id="lst1">                
+                <option value="+">Suma</option>
+                <option value="-">Resta</option>
+                <option value="*">Multiplicación</option>
+                <option value="/">División</option>
+            </select>
+            <br>
+            <input type="reset" value="Limpiar">
+            <input type="submit" value="Operar">
+            <input type="button" value="acerca de..." id="boton1">
+            <input type="button" value="ocultar" id="boton2">
+            <input type="button" value="Limpiar tabla" id="boton3">
+        </form>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Operacion</th><th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="drivers"></tbody>
+        </table>
+        <div id="div1"></div>
+    </body>
+</html>
